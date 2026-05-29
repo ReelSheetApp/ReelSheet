@@ -5,8 +5,8 @@ from pathlib import Path
 
 
 def load_module():
-    module_path = Path(__file__).with_name("reelsheet_v0.1.24.py")
-    spec = importlib.util.spec_from_file_location("reelsheet_v0_1_24", module_path)
+    module_path = Path(__file__).with_name("reelsheet_v0.1.25.py")
+    spec = importlib.util.spec_from_file_location("reelsheet_v0_1_25", module_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
@@ -42,6 +42,23 @@ class HelperTests(unittest.TestCase):
         self.assertGreaterEqual(right, 0.05)
         self.assertLessEqual(right, 0.8)
         self.assertNotEqual(left, right)
+
+    def test_file_details_formatters_match_compact_row(self):
+        rs = load_module()
+
+        self.assertEqual(rs.format_file_size(345505792), "329 MB")
+        self.assertEqual(rs.format_resolution(1280, 720), "1280 x 720")
+        self.assertEqual(rs.format_frame_rate(60.0), "60.00 fps")
+        self.assertEqual(rs.format_video_type(Path("clip.mp4")), "MP4 Video File")
+
+    def test_selected_path_parts_split_folder_and_filename(self):
+        rs = load_module()
+
+        folder, name = rs.selected_path_parts(
+            Path("D:/Media/Folder/Selected Video.mp4"))
+
+        self.assertEqual(folder.replace("\\", "/"), "D:/Media/Folder/")
+        self.assertEqual(name, "Selected Video.mp4")
 
 
 if __name__ == "__main__":

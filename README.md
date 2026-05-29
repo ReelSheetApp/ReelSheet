@@ -1,6 +1,6 @@
 # ReelSheet
 
-ReelSheet is a Windows-focused Python desktop app for browsing videos, choosing better thumbnail frames, and embedding those thumbnails back into MP4 files.
+ReelSheet helps Windows users visually organize large local video libraries with custom video thumbnails, folder thumbnails, and contact sheets in one workflow.
 
 The current app is an early preview. The thumbnail picker is the working area. Contact sheet generation is planned for `v0.2.0`.
 
@@ -9,7 +9,7 @@ The current app is an early preview. The thumbnail picker is the working area. C
 Active development version:
 
 ```text
-reelsheet_v0.1.24.py
+reelsheet_v0.1.25.py
 ```
 
 Launch from the project folder:
@@ -19,7 +19,7 @@ cd /d C:\ReelSheet
 run.bat
 ```
 
-Current `run.bat` launches `reelsheet_v0.1.24.py`.
+Current `run.bat` launches `reelsheet_v0.1.25.py`.
 
 ## Current Features
 
@@ -69,7 +69,7 @@ python -m pip install python-vlc
 The app is currently kept as versioned single-file Python scripts:
 
 ```text
-reelsheet_v0.1.24.py       Active app version
+reelsheet_v0.1.25.py       Active app version
 run.bat                    Launches the active app version
 requirements.txt           Python package requirements
 CHANGELOG.md               Version history

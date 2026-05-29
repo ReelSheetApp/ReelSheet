@@ -14,6 +14,16 @@ Planned work:
 - Add Dark, Light, and Colorblind theme options.
 - Decide whether `Set All Thumbnails` should remain or be replaced by a staged batch workflow.
 
+## v0.1.25 - 2026-05-29
+
+Selected file path and details polish.
+
+- Added selected filename to the top path display.
+- Highlighted the selected filename inline within the full path.
+- Added compact file details row with type, size, length, resolution, and frame rate.
+- Added a clear "No embedded thumbnail" state when a video has no current thumbnail.
+- Updated launcher to run `reelsheet_v0.1.25.py`.
+
 ## v0.1.24 - 2026-05-28
 
 Lower control layout refinement.
@@ -22,7 +32,7 @@ Lower control layout refinement.
 - Centered transport controls independently.
 - Centered action buttons independently.
 - Kept action buttons equal width.
-- Status: needs visual confirmation.
+- User visually confirmed lower controls are aligned.
 
 ## v0.1.23 - 2026-05-28
 
