@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.egg-link
+.installed.cfg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp files
+*.tmp
+*.log
+logs/
+
+# ReelSheet specific
+temp/
+*.bak
+reelsheet_prefs.json
+reelsheet_audio.log
+_debug_frames/
+_debug_frames2/
+
+# Local media/test inputs
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.wmv
