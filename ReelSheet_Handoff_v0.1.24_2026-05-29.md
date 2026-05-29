@@ -216,6 +216,7 @@ Restart VS Code / Codex to auto-discover it. In the current session, it can be u
 
 - Begin responses with `[YYYY-MM-DD HH:mm] PT` if continuing the ReelSheet style.
 - Kevin is PM/director, not a coder. Explain decisions clearly and avoid jargon without context.
+- Treat software process as part of the deliverable: explain what you are doing and why, especially around GitHub, releases, changelogs, packaging, and professional project hygiene.
 - Use `apply_patch` for manual file edits.
 - Do not use destructive git commands.
 - This repo currently appears uncommitted/untracked; do not assume git history protects changes.
